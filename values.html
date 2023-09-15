@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Values</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include any other CSS or assets here -->
+</head>
+
+<style>
+    /* Reset some default styles */
+    body,
+    h1,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('shutt.jpg');
+        /* Path to your background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #fff;
+        /* Text color for better visibility on the background */
+    }
+
+    h1 {
+        background-color: rgba(51, 51, 51, 0.8);
+        /* Semi-transparent background color for the header */
+        color: #fff;
+        padding: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    li {
+        font-size: 18px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Semi-transparent background for list items */
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        /* Text color */
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    /* Add hover effect for list items */
+    li:hover {
+        background-color: rgba(244, 244, 244, 0.8);
+        /* Semi-transparent background for list items on hover */
+        transform: scale(1.05);
+        /* Add a slight scale effect on hover */
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    /* Center-align content */
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    /* Add animation to the heading */
+    h1 {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+    /* Apply Comic Sans MS font to the main container */
+.main-container {
+    font-family: "Comic Sans MS", cursive;
+}
+
+/* Style the list items if needed */
+/* Apply Gabriola font to the links container */
+.links {
+    font-family: "Gabriola", cursive;
+}
+
+
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo-decoration">
+                    <!-- <h1 class="logo"><img src="image/GHO.JPG" alt="" class="logo-pic" /><span
+                            class="logo-title">GHO</span></h1> -->
+                </a>
+                <div class="links">
+                    <a href="index.html" class="links-text">HOME</a>
+                    <a href="aboutus.html" class="links-text">ABOUT US</a>
+                    <a href="our-menu.html" class="links-text">GALLERY</a>
+                    <!-- <a href="#OUR PARTNER" class="links-text">OUR GOALS</a> -->
+                    <a href="values.html" class="links-text">OUR VALUES</a>
+                    <a href="contact.html" class="links-text">CONTACT US</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <div class="main-container">
+        <h1>Our Core Values</h1>
+        <ul class="values-list">
+            <li>Honnêteté (Honesty)</li>
+            <li>Intégrité (Integrity)</li>
+            <li>Loyauté (Loyalty)</li>
+            <li>Respect (Respect)</li>
+            <li>Entraide (Helpfulness)</li>
+            <li>Humanité (Humanity)</li>
+        </ul>
+    </div>
+    <!-- Add your additional content here -->
+</main>
+
+
+
+    <footer>
+        <div class="first-footer">
+            <div class="footer-images">
+                <img src="GHO.JPG" class="images-footer">
+            </div>
+            <div class="footer-container">
+                <div class="link-partner">
+                    <h3 class="title2">Contact Info</h3>
+                    <li class="list-links">(+243)979274236</li>
+                </div>
+                <div class="link-partner">
+                    <h3 class="title3"><img src="location-remover.png" class="location-logo"><span
+                            class="location">Location</span></h3>
+                    <li class="list-links">Bukavu, DRC, Av.Hippodrome</li>
+                </div>
+                <div class="link-partner">
+                    <h3 class="title4">Our Accounts</h3>
+                    <div class="logos">
+                        <li class="list-links"><img src="Airtel.jpg" class="instagram"  style="width : 100px; height: 50px;"/><a
+                                href="https://instagram.com/___gh_organization?igshid=OGQ5ZDc2ODk2ZA=="><span
+                                    class="instagram-text">(+243)979274236</span></a></li>
+                        <!-- <li class="list-links" ><img src="image/linkdin.png" class="linkdin"><a href="https://rw.linkedin.com/company/simba-supermarket-ltd-rwanda"><span class="linkdin-text">Linkedin</span></a></li> -->
+                        <!-- <li class="list-links"><img src="
+                                        twitter-remover.png" class="twitter"><a href="https://twitter.com/GHOrganization7?s=20"><span
+                                    class="instagram-text">twitter</span></a></li> -->
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright-text">&#169; 2023 GHO. All right reserved Powered by <span class="group1">Jocos</span>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Include any other scripts here -->
+</body>
+
+</html>

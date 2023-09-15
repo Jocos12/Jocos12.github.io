@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    
+  }
+  
+  .gallery-title {
+    font-size: 18px;
+    font-family: 'Lato';
+    color: #e85e04;
+    text-decoration: none;
+  }
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #de9c39;
+    color: #fff;
+    border-bottom: 4px solid #523406;
+    
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap:30px;
+    size: 5px;
+  }
+ 
+  .item img {
+    width: 40%;
+    max-width: 350px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-right: 10px;
+    cursor: pointer; 
+    transition: 0.2s ease; 
+  } 
+.item img:hover{
+  transform: scale(0.7);
+}
+
+
+.card-img-top{
+  border-radius: 50px;
+  padding: 20px;
+}
+.card{
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+  padding: 25px;
+  margin-top: -15px;
+}
+.btn-primary{
+  border-radius: 50px;
+  width: 120px;
+}
+.btn-primary:hover{
+  background-color: black;
+  border: none;
+}
+h3,h5{
+  color: #e85e04;
+}
+.btn {
+  background-color: #e85e04;
+  border-radius: 60px;
+  width: 120px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ /* Add your custom styles for the enlarged image here */
+ .enlarged-image-container {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 999;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .enlarged-image {
+   max-width: 70%;
+   max-height: 70%;
+ }
+
+ .close-button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   color: rgb(230, 24, 24);
+   font-size: 24px;
+   cursor: pointer;
+ }
+
+ /* CSS Styles for the navigation buttons */
+ .nav-button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.6);
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   display: block;
+   font-size: 18px;
+   outline: none;
+ }
+
+ #prev-button {
+   left: 20px;
+ }
+
+ #next-button {
+   right: 20px;
+ }

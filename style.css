@@ -1,0 +1,888 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  padding-top: 71px;
+  position: relative;
+  /* overflow-y: hidden;
+    scrollbar-width: none; */
+}
+
+/* body ::-webkit-scrollbar {
+    display: none;
+    
+} */
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+.container {
+  background-color: #5c51f7;
+  width: 100%;
+  height: 70px;
+  border-top: 5px solid #ff00bf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 10px 7px 40px rgb(54, 54, 54);
+}
+.logo-decoration {
+  text-decoration: none;
+}
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  transform: translateX(60px);
+}
+.logo-title {
+  color: #ffffff;
+}
+.logo-pic {
+  height: 60px;
+  cursor: pointer;
+}
+
+.links-text:link,
+:visited {
+  color: #333;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 15px 15px;
+  cursor: pointer;
+}
+.links-text:hover {
+  padding: 8px 0;
+  border-bottom: 3px solid hsl(320, 100%, 51%);
+  animation: moveinright 1s ease-out;
+}
+.header-container {
+  background-image: url('img18.jpg');
+  background-size: 150%;
+  /* Increase the background image size to 150% */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header-title {
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.main-section-text {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 3px solid hsl(320, 100%, 51%);
+}
+.about-title {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 3px solid rgb(248, 248, 248);
+}
+.woman-shopping {
+  width: 310px;
+  /* position: absolute;
+    top: 40px;
+    left: 50px; */
+}
+.woman-shoppings {
+  width: 370px;
+  /* position: absolute;
+    top: 40px;
+    left: 50px; */
+}
+.About-container {
+  background-color: #790a0a;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.About-containers {
+  background-color: #e85e04;
+  width: 100%;
+  height: 390px;
+  position: relative;
+  display: flex;
+  /* animation: moveButton 2s ease-in-out; */
+
+  padding: 0 50px;
+}
+.our-partner-container {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 180px;
+}
+.our-mission-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 0;
+}
+.our-mission-span {
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.our-mission-spans {
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.our-mission {
+  width: 100%;
+  height: 80px;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-mission-container {
+  width: 70%;
+  height: 465px;
+  background-color: #e85e04;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+.background {
+  background-color: #e85e04;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* animation: moveButton 2s ease-in-out; */
+}
+.ourmissioncontainer {
+  position: relative;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  animation: moveinleft 2s ease-in-out;
+}
+.copyright {
+  width: 100%;
+  height: 60px;
+  background-color: #0e0e13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright-text {
+  color: #9898a0;
+}
+.group1 {
+  color: #fff;
+  font-size: 16px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+}
+.first-footer {
+  width: 100%;
+  height: 200px;
+  background-color: hsl(320, 100%, 51%);
+  display: flex;
+}
+.footer-images {
+  /* background-color: #fff; */
+}
+.images-footer {
+  height: 200px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.link-partner {
+  margin: 90px 70px;
+  padding-right: 50px;
+  line-height: 2.1;
+}
+.footer-logo {
+  width: 100px;
+  background-color: #fff;
+  padding: 30px 19px;
+  border-radius: 50%;
+  transform: translateY(-40px);
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10px;
+}
+.equite {
+  width: 80px;
+  height: 50px;
+}
+.bke {
+  width: 80px;
+  height: 50px;
+}
+.ime {
+  width: 80px;
+  height: 50px;
+}
+.location {
+  padding: 0 -5px;
+}
+.footer-logo {
+}
+.location-logo {
+  width: 20px;
+  transform: translateY(3px);
+  /* transform: translateX(-7px);   */
+}
+.twitter {
+  width: 25px;
+}
+.linkdin {
+  width: 25px;
+
+  /* transform: translateY(5px); */
+}
+.linkdin-text {
+  /* padding: 5px 0; */
+  color: #fff;
+  font-family: "Lato";
+}
+.instagram {
+  width: 25px;
+  /* transform: translateY(5px); */
+}
+li a {
+  text-decoration: none;
+}
+.instagram-text {
+  /* padding: 0 10px; */
+  color: #fff;
+  font-family: "Lato";
+}
+
+/* .footer {
+    display: flex;
+    align-items: center;
+} */
+
+.title1,
+.title2,
+.title3,
+.title4 {
+  color: #3b3838;
+}
+.list-links {
+  list-style: none;
+  font-family: "lato";
+  color: #fff;
+}
+
+.welcome-h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: trebuchet ms, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 16px;
+  animation: text-animation 2s ease-out;
+}
+.motorcycle {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  background-color: #333;
+  animation: moveMotorcycle 4s linear infinite;
+}
+
+.bk {
+  width: 130px;
+  height: 90px;
+  object-fit: contain;
+}
+.equity {
+  width: 130px;
+  height: 90px;
+  object-fit: contain;
+  padding-top: 15px;
+}
+
+.imbank {
+  width: 130px;
+  height: 90px;
+  object-fit: contain;
+  padding-top: 15px;
+}
+
+.first-partner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bank-text {
+  letter-spacing: 3px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lato";
+  display: block;
+  animation: text-animation 2s ease-out;
+  backface-visibility: hidden;
+}
+
+.bank-text1 {
+  letter-spacing: 3px;
+  padding: -20px -10px;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "montserrat", sans-serif;
+  display: block;
+  animation: text-animation 2s ease-out;
+  backface-visibility: hidden;
+}
+
+.bank-text2 {
+  letter-spacing: 3px;
+  padding: -30px 50px;
+  padding-left: 12px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "montserrat", sans-serif;
+  display: block;
+  animation: text-animation 2s ease-out;
+  backface-visibility: hidden;
+}
+.welcome-text-center {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #e0e1e6;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  /* backface-visibility: hidden; */
+}
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+
+  /* animation-iteration-count: 2; */
+  /* animation-delay: 3s; */
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  animation: moveInRight 2s ease-out;
+}
+.form {
+  position: relative;
+}
+.select {
+  width: 150px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+}
+.search-location {
+  width: 450px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.location-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 13px;
+  left: 180px;
+  opacity: 0.5;
+}
+.form {
+  animation: moveButton 2s ease-in-out;
+}
+.delivery {
+  transform: translateX(10px);
+  color: #000;
+  font-size: 20px;
+}
+/* label {
+    font-weight: 400px;
+    font-size: 15px;
+} */
+::placeholder {
+  font-weight: 400px;
+  color: #333;
+  font-size: 15px;
+  padding: 0 40px;
+  opacity: 0.6;
+}
+.number1 {
+  width: 120px;
+  height: 120px;
+  margin: 7px 10px;
+
+  background-color: #e80476;
+  opacity: 0.5;
+  /* position: absolute;
+    top: 40px;
+    left: 200px; */
+  border-radius: 50%;
+}
+.numbers {
+  font-size: 90px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #000;
+  padding-left: 10px;
+}
+.introduction {
+  /* position: absolute;
+    top: 200px;
+    left: 800px; */
+  /* display: grid;
+    align-content: center;
+    justify-content: center; */
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.whatissimba {
+  display: block;
+  width: 350px;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Lato";
+  animation: moveButton 1s ease-in-out;
+}
+.whatissimbapic {
+  /* display: grid;
+    align-content: center; */
+  /* margin: 0 20px; */
+  display: flex;
+  justify-content: center;
+  animation: moveButton 0.45s ease-in-out;
+}
+.what-is-simba {
+  display: block;
+  width: 550px;
+  margin: 30px 0;
+}
+.gotomenu {
+  /* padding: 20px 35px; */
+  width: 200px;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 19px;
+  margin-left: -4px;
+  background-color: hsl(320, 100%, 51%);
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 1s, color 1s;
+}
+.gotomenu:hover {
+  color: #fff;
+  background-color: #212226;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn-white {
+  background-color: hsl(320, 31%, 50%);
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  background: transparent;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #5c51f7;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveButton 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveButton {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveMotorcycle {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.contact-info {
+  background-image: url("contactimage.jpg");
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.heading-primary-2 {
+  color: #ffff;
+  padding-top: 30dvh;
+  padding-left: 15dvh;
+}
+
+.heading-primary-m {
+  display: block;
+  font-size: 21px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+}
+.heading-primary-m2 {
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+  animation: moveInLeft 2s;
+}
+
+.contact-info-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-holder {
+  width: 50%;
+  display: block;
+  font-size: 25px;
+  font-weight: 50px;
+  padding-top: 10dvh;
+  padding-left: 15dvh;
+}
+.h4 {
+  color: hsl(320, 100%, 51%);
+}
+
+/* .contact-form {
+  width: 50%;
+}
+
+.contact-form form {
+  background-color: hsl(0, 0%, 100%) f;
+  padding: 20px;
+}
+.contact-form label {
+  display: block;
+  color: #000;
+  margin-bottom: 10px;
+} */
+/* .contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #e5e5e5;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+} */
+.email {
+  width: 600px;
+}
+.contact-form button[type="submit"] {
+  background-color: #04e89c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.contact-form button[type="submit"]:hover {
+  background-color: rgb(251, 140, 71);
+}
+
+.contact-content {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  
+}
+.clearfix {
+  list-style: none;
+  padding: 0;
+}
+
+.clearfix li {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 700px;
+  /* Adjust the width of the image */
+  height: auto;
+  /* Automatically adjust the height to maintain aspect ratio */
+  margin-right: 20px;
+  /* Add some spacing between the text and the image */
+}
+.main-section-text {
+  margin-bottom: 10px;
+  /* Decrease the space between h1 and h2 */
+}
+
+.content h2 {
+  margin-top: 10px;
+  /* Decrease the space between h1 and h2 */
+}
+.services {
+  background-color: black;
+  /* Set the background color to black */
+  color: white;
+  /* Set the text color to white for better visibility */
+}
+
+     body {
+       background-image: url('mineur.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       font-family: Arial, sans-serif;
+     }
+  
+     /* Style the container */
+     .added-text {
+       background-color: rgba(255, 255, 255, 0.8);
+       /* Add a semi-transparent white background */
+       padding: 20px;
+       margin: 50px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+       /* Add a subtle shadow */
+     }
+  
+     /* Style the text within the container */
+     .added-text p {
+       margin: 10px 0;
+       line-height: 1.5;
+     }
+
+     
+     /* Apply styles to the container */
+.your-container {
+    text-align: justify; /* Justify the text for a clean and neat look */
+    font-family: Arial, sans-serif; /* Use a readable font */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Style the h3 element */
+.what-is-simba {
+    font-size: 18px; /* Increase font size for emphasis */
+    font-weight: bold; /* Make the text bold for emphasis */
+    margin-top: 20px; /* Add some top margin for separation */
+}
+
+
+/* Apply styles to the container */
+.your-container {
+    text-align: justify; /* Justify the text for a clean and neat look */
+    font-family: "Microsoft YaHei Light", Arial, sans-serif; /* Use Microsoft YaHei Light as the primary font */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Style the h3 element */
+.what-is-simba {
+    font-size: 18px; /* Increase font size for emphasis */
+    font-weight: bold; /* Make the text bold for emphasis */
+    margin-top: 20px; /* Add some top margin for separation */
+}
+
+/* Apply styles to the container */
+.our-mission,
+.ourmissioncontainer {
+  font-family: "Lucida Console", monospace;
+  /* Use Lucida Console as the font */
+}
+
+/* Style the headings and spans */
+.our-mission-title,
+.our-mission-span,
+.our-mission-title,
+.our-mission-spans {
+  font-size: 16px;
+  /* Adjust the font size as needed */
+  line-height: 1.5;
+  /* Adjust line height for readability */
+}
+
